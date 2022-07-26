@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>penguin-fashion-tailwind-css</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              pColor: "#3E3E3E",
+              bgBtnColor: "#A4BC46",
+              hbgColor:"#FFFBF0",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div id="header bg-[#FFFBF0]">
+      <section class="container mx-auto text-center sm:text-left py-11 sm:flex items-center sm:justify-around">
+        <div class="header-title space-y-4 pb-8">
+          <h1 class="text-2xl sm:text-6xl font-bold uppercase leading-tight">
+            <span class="text-yellow-400">Be the Penguins</span><br />
+            <span>of Winter</span>
+          </h1>
+          <p class="text-[#3E3E3E]">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button
+            class="text-1xl sm:text-2xl bg-[#A4BC46] text-white py-2 px-5 sm:py-2 sm:px-7 rounded-lg font-semibold">
+            BUY NOW
+          </button>
+        </div>
+        <!-- ./ header-title -->
+        <div class="header-img  flex justify-center">
+          <img class="w-1/2 sm:w-full " src="./assets/images/model.png" alt="model apa">
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
